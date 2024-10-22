@@ -11,3 +11,26 @@ iframe {
   right: 0;
   bottom: 0;
 }
+nav {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  position: absolute;
+  right: 3rem;
+  bottom: 3rem;
+  z-index: 100;
+}
+nav button {
+  font: 600 1.3rem "Arial";
+  background-color: white;
+  aspect-ratio: 1/1;
+  width: 3rem;
+  border: 6px solid orange;
+  border-radius: 0.15em;
+  transition: all .12s;
+  cursor: pointer;
+}
+nav button:hover {
+  color: white;
+  background-color: orange;
+}
