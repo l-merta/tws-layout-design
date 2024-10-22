@@ -21,16 +21,18 @@ nav {
   z-index: 100;
 }
 nav button {
-  font: 600 1.3rem "Arial";
-  background-color: white;
+  background-color: transparent;
   aspect-ratio: 1/1;
-  width: 3rem;
-  border: 6px solid orange;
-  border-radius: 0.15em;
-  transition: all .12s;
+  width: 4rem;
+  border: none;
+  filter: grayscale(1);
+  transition: filter .12s;
   cursor: pointer;
 }
+nav .button-active,
 nav button:hover {
-  color: white;
-  background-color: orange;
+  filter: grayscale(0);
+}
+nav button img {
+  width: 100%;
 }
