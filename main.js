@@ -1,5 +1,5 @@
 switchIframe(1);
 
-function switchIframe(index) {
-  document.querySelector('iframe').src = 'design' + index + '/index.html';
+function switchIframe(name) {
+  document.querySelector('iframe').src = name;
 }
