@@ -2,9 +2,17 @@ body {
   color:#919191;
   background-color:#232323;
   font-size:13px;
-  font-family:Georgia, "Times New Roman", Times, serif;
+  font-family: var(--f1);
   margin:0;
   padding:0;
+  overflow-x: hidden;
+
+  --f1: "Be Vietnam Pro";
+  --c1: #0b1724;
+  --c2: white;
+  --c3: #F7FF19;
+  --c4: #076FB6;
+  --c5: #052A69;
 }
 
 .clear:after {
@@ -104,12 +112,13 @@ div.wrapper {
 }
 
 .row1, .row1 a {
-  color:red; 
-  background-color:#333333;
+  color: var(--c2); 
+  background-color: var(--c1);
 }
 .row2 {
-  color:#979797; 
-  background-color:#FFFFFF;
+  color: #979797; 
+  background: var(--c4);
+  background: linear-gradient(90deg, var(--c4) 0%, var(--c5) 100%);
 }
 .row2 a {
   color:#FF9900; 
@@ -229,7 +238,7 @@ header {
 
 header #hgroup {
   float:left; 
-  margin:0 0 20px 0;
+  margin:0 0 10px 0;
 }
 header #hgroup h1, 
 header #hgroup h2 {
@@ -243,34 +252,52 @@ header #hgroup h1 {
 header #hgroup h2 {
   font-size:13px;
 }
+header #hgroup img {
+  width: 140px;
+}
 
 header form {
+  font-family: var(--f1) !important;
   display:block; 
-  width:290px; 
+  /* width:290px;  */
   float:right; 
-  margin:20px 0; 
+  margin-top: 10px;
   padding:0;
 }
 header form input {
+  color: var(--c2);
+  background-color: var(--c1); 
+  font-family: var(--f1) !important;
+  width:200px;
+  border: 2px solid var(--c2);
+  border-radius: 30px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  margin:0; 
+  padding:10px;
+  padding-left: 20px;
   display:block; 
   float:left; 
-  width:200px;
-  margin:0; 
-  padding:5px; 
-  color:#C0BAB6; 
-  background-color:#232323; 
-  border:1px solid #666666;
+}
+header form input:focus {
+  outline: none;
 }
 header form #sf_submit {
-  display:block; 
-  float:right; 
-  width:70px; 
+  color: var(--c1); 
+  background-color: var(--c2); 
+  width: fit-content; 
+  font-family: var(--f1) !important;
   font-size:12px; 
   font-weight:bold; 
-  text-transform:uppercase; 
-  color:#FFFFFF; 
-  background-color:#FF9900; 
   border:none; 
+  border-radius: 30px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  padding: 12px 10px;
+  padding-right: 15px;
+  display:block; 
+  float:right; 
+  text-transform:uppercase; 
   cursor:pointer;
 }
 
@@ -317,7 +344,7 @@ header nav li a:hover {
   margin:0;
 }
 #container .more {
-  text-align:left;
+  text-align:right;
 }
 
 /* ------Slider-----*/
@@ -418,7 +445,8 @@ header nav li a:hover {
   text-transform:uppercase;
 }
 #container #homepage section footer {
-  clear:both;
+  clear: both;
+  text-align: start;
 }
 
 /* ------Blog-----*/

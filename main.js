@@ -1,6 +1,6 @@
 const navButtons = document.querySelectorAll("nav button");
 
-switchIframe('design_steam', navButtons[0]); // Starting design
+switchIframe('design_fortnite', navButtons[1]); // Starting design
 function switchIframe(name, button) {
   document.querySelector('iframe').src = name;
   setActiveButton(button);
