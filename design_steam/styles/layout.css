@@ -5,6 +5,7 @@ body {
   font-family: "Ubuntu";
   margin:0;
   padding:0;
+  overflow-x: hidden;
 
   --c1: #C5C3C0;
   --c2: #171D25;
@@ -14,6 +15,9 @@ body {
   --c6: #0F216E;
   --c7: #278FCC;
   --c8: #316282;
+  --c9: #A8E313;
+  --c10: #4C6B22;
+  --c11: #80ad2b;
 }
 
 .clear:after {
@@ -62,7 +66,7 @@ img {
 }
 .imgholder, .imgl, .imgr {
   padding:4px; 
-  border:1px solid #D6D6D6; 
+  /* border:1px solid #D6D6D6;  */
   text-align:center;
 }
 .imgl {
@@ -122,8 +126,7 @@ div.wrapper {
   background: linear-gradient(0deg, var(--c3) 60%, var(--c4) 100%);
 }
 .row2 a {
-  color:#FF9900; 
-  background-color:#FFFFFF;
+  color: var(--c1); 
 }
 .row3, .row3 a {
   color:#919191; 
@@ -149,7 +152,6 @@ h1, h2, h3, h4, h5, h6 {
   padding:0; 
   font-size:22px; 
   font-weight:normal; 
-  font-style:italic; 
   line-height:normal;
 }
 
@@ -414,17 +416,26 @@ header nav li a:hover {
 #container #intro {
   width:100%; 
   margin-bottom:60px; 
-  padding-bottom:20px; 
-  border-bottom:1px solid #D6D6D6;
+  padding-bottom:5px; 
+  /* border-bottom:1px solid #D6D6D6; */
 }
 #container #intro section {
   width:100%;
 }
-#container #intro section article {}
-#container #intro section article h2 {
-  margin-bottom:15px;
+#container #intro section img {
+  border: none;
 }
-#container #intro section article p {}
+#container #intro section article {
+  color: var(--c1);
+}
+#container #intro section article h2 {
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom:10px;
+}
+#container #intro section article p {
+  font-size: 17px;
+}
 #container #intro section article figure ul {
   display:block; 
   width:100%; 
@@ -450,11 +461,18 @@ header nav li a:hover {
 #container #intro section article figure figcaption {
   display:block; 
   width:100%; 
-  margin-top:20px; 
+  margin-top:30px; 
   clear:both; 
   text-align:center; 
   text-transform:uppercase; 
   font-weight:bold;
+}
+#container #intro section article figure figcaption a {
+  color: var(--c9);
+  background: rgb(76,107,34);
+  background: linear-gradient(0deg, var(--c10) 0%, var(--c11) 100%);
+  border-radius: 5px;
+  padding: 10px;
 }
 
 #container #homepage {
@@ -466,7 +484,7 @@ header nav li a:hover {
   margin-bottom:0;
 }
 #container #homepage section h2.title {
-  margin:0 0 25px 0; 
+  margin:0 0 15px 0; 
   padding:0 0 8px 0; 
   font-size:16px; 
   font-weight:bold; 
@@ -495,20 +513,20 @@ header nav li a:hover {
 #container #homepage section nav li {
   margin:0 0 8px 0; 
   padding:0 0 5px 0; 
-  border-bottom:1px solid #D6D6D6;
+  /* border-bottom:1px solid #D6D6D6; */
 }
 #container #homepage section nav li.last {
   margin:0;
-}
-#container #homepage section nav a {
-  padding:0 0 0 10px; 
-  background:url("../images/arrow.gif") left center no-repeat;
 }
 
 /*----------------------------------------------Patička-------------------------------------*/
 
 footer {
   padding:20px 0;
+}
+footer img {
+  width: 100px;
+  margin-right: 10px;
 }
 footer p {
   margin:0; padding:0;
