@@ -18,6 +18,8 @@ body {
   --c9: #A8E313;
   --c10: #4C6B22;
   --c11: #80ad2b;
+  --c12: #65bbec;
+  --c13: #224b66;
 }
 
 .clear:after {
@@ -129,8 +131,8 @@ div.wrapper {
   color: var(--c1); 
 }
 .row3, .row3 a {
-  color:#919191; 
-  background-color:#232323;
+  color: #919191;
+  background-color: var(--c2);
 }
 
 /*----------------------------------------------Základní nastavení prvků na webu-------------------------------------*/
@@ -455,8 +457,8 @@ header nav li a:hover {
   width:130px; 
   height:130px; 
   margin:0; 
-  padding:4px; 
-  border:1px solid #D6D6D6;
+  padding:3px; 
+  border:1px solid #d6d6d67e;
 }
 #container #intro section article figure figcaption {
   display:block; 
@@ -467,12 +469,21 @@ header nav li a:hover {
   text-transform:uppercase; 
   font-weight:bold;
 }
-#container #intro section article figure figcaption a {
-  color: var(--c9);
+.steam-button {
+  color: var(--c9) !important;
   background: rgb(76,107,34);
   background: linear-gradient(0deg, var(--c10) 0%, var(--c11) 100%);
+  font-weight: 600;
   border-radius: 5px;
   padding: 10px;
+}
+.steam-button-2 {
+  color: var(--c12) !important;
+  background-color: var(--c13);
+  /* background: linear-gradient(0deg, var(--c13) 0%, var(--c14) 100%); */
+  font-weight: 600;
+  border-radius: 3px;
+  padding: 8px 10px;
 }
 
 #container #homepage {
@@ -510,6 +521,11 @@ header nav li a:hover {
 
 /* ------Odkazy-----*/
 
+#container #homepage section nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 #container #homepage section nav li {
   margin:0 0 8px 0; 
   padding:0 0 5px 0; 
