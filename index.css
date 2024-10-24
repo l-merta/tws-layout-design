@@ -20,19 +20,34 @@ nav {
   bottom: 3rem;
   z-index: 100;
 }
+nav .divider {
+  background-color: rgb(141, 141, 141);
+  width: 3px;
+  height: 3rem;
+  border-radius: 1rem;
+}
+nav a,
 nav button {
   background-color: transparent;
   aspect-ratio: 1/1;
   width: 4rem;
   border: none;
   filter: grayscale(1);
-  transition: filter .12s;
+  transition: all .12s;
   cursor: pointer;
 }
+nav a,
 nav .button-active,
 nav button:hover {
   filter: grayscale(0);
 }
+nav a:hover img {
+  scale: 0.8;
+}
+nav a img,
 nav button img {
   width: 100%;
+}
+nav a img {
+  scale: 0.7;
 }
