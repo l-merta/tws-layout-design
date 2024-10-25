@@ -61,7 +61,7 @@ img {
 }
 .imgholder, .imgl, .imgr {
   padding:4px; 
-  border:1px solid #D6D6D6; 
+  /* border:1px solid #D6D6D6;  */
   text-align:center;
 }
 .imgl {
@@ -315,14 +315,14 @@ header nav ul {
 }
 header nav li {
   display:inline; 
-  margin-right:25px; 
-  text-transform:uppercase;
+  margin-right:25px;
 }
 header nav li.last {
   margin-right:0;
 }
 header nav li a {
   color: var(--c2) !important;
+  font: 500 15px var(--f1);
 }
 header nav li a:hover {
   opacity: 0.8;
@@ -396,6 +396,11 @@ header nav li a:hover {
 }
 .fort-button:hover {
   opacity: 0.9;
+}
+.fort-button-small {
+  font-size: 14px !important;
+  border-radius: 8px;
+  padding: 10px 18px !important;
 }
 #container #slider figure h2 {
   font-size:42px; 
@@ -474,14 +479,23 @@ header nav li a:hover {
   line-height:1.6em;
 }
 #container #homepage section {
-  margin-bottom:0;
+  color: var(--c2);
+  margin-bottom: 0;
 }
 #container #homepage section h2.title {
-  margin:0 0 25px 0; 
+  color: var(--c2);
+  font: 500 20px var(--f1);
+  margin-bottom: 5px;
   padding:0 0 8px 0; 
   font-size:16px; 
   font-weight:bold; 
   text-transform:uppercase;
+}
+#container #homepage section p {
+  opacity: 0.8;
+  font: 500 14px var(--f1);
+  margin: 0;
+  padding-right: 20px;
 }
 #container #homepage section footer {
   clear: both;
@@ -489,7 +503,6 @@ header nav li a:hover {
 }
 
 /* ------Blog-----*/
-
 #container #homepage section article header h2 {
   font-size:13px; 
   font-weight:bold;
@@ -505,23 +518,32 @@ header nav li a:hover {
 /* ------Odkazy-----*/
 
 #container #homepage section nav li {
-  margin:0 0 8px 0; 
-  padding:0 0 5px 0; 
-  border-bottom:1px solid #D6D6D6;
+  margin:0 0 2px 0; 
+  padding:0 0 5px 0;
 }
 #container #homepage section nav li.last {
   margin:0;
 }
 #container #homepage section nav a {
-  padding:0 0 0 10px; 
-  background:url("../images/arrow.gif") left center no-repeat;
+  color: var(--c2);
+  background-color: transparent;
+  opacity: 0.9;
+}
+#container #homepage section nav a:hover {
+  text-decoration: underline;
 }
 
 /*----------------------------------------------Patička-------------------------------------*/
 
 footer {
+  font: 400 14px var(--f1);
   padding:20px 0;
 }
 footer p {
-  margin:0; padding:0;
+  margin:0;
+  padding:0;
+}
+footer img {
+  width: 34px;
+  margin-right: 10px;
 }
