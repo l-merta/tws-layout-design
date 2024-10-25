@@ -302,16 +302,16 @@ header form #sf_submit {
 }
 
 header nav {
-  display:block; 
+  color: var(--c1);
   width:100%; 
-  margin:0; 
-  padding:20px 0; 
-  color:#C0BAB6; 
-  background-color:#232323; 
+  margin:0;
+  /* padding:20px 0;  */
+  padding-top: 10px;
+  display:block; 
   clear:both;
 }
 header nav ul {
-  padding:0 20px;
+  /* padding:0 20px; */
 }
 header nav li {
   display:inline; 
@@ -322,12 +322,10 @@ header nav li.last {
   margin-right:0;
 }
 header nav li a {
-  color:#C0BAB6; 
-  background-color:#232323;
+  color: var(--c2) !important;
 }
 header nav li a:hover {
-  color:#FF9900; 
-  background-color:#232323;
+  opacity: 0.8;
 } 
 
 /*----------------------------------------------Obsah-------------------------------------*/
@@ -354,24 +352,50 @@ header nav li a:hover {
 }
 #container #slider figure {}
 #container #slider figure img {
-  float:right; 
   width:630px; 
-  height:300px;
+  height:330px;
+  border-radius: 10px;
+  float:right; 
 }
 #container #slider figure figcaption {
-  display:block; 
-  float:left; 
+  color: var(--c2); 
+  /* background-color:#464646;  */
   width:290px; 
   height:260px; 
-  padding:20px; 
-  overflow:hidden; 
-  color:#989898; 
-  background-color:#464646; 
+  padding-right: 20px;
+  display:block; 
+  float:left; 
   line-height:1.6em;
 }
-#container #slider figure figcaption a {
-  color:#FF9900; 
-  background-color:#464646;
+#container #slider figure figcaption h2 {
+  font: 700 42px var(--f1);
+}
+#container #slider figure figcaption p {
+  opacity: 0.8;
+  font: 500 20px var(--f1);
+  margin-top: 10px;
+}
+#container #slider figure figcaption footer {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: start;
+  align-items: end;
+  overflow: visible;
+}
+#container #slider figure figcaption footer a {
+  font-size: 25px;
+  margin-top: -10px;
+}
+.fort-button {
+  color: var(--c1) !important; 
+  background-color: var(--c3) !important;
+  font: 900 16px var(--f1);
+  border-radius: 12px;
+  padding: 15px 25px !important;
+}
+.fort-button:hover {
+  opacity: 0.9;
 }
 #container #slider figure h2 {
   font-size:42px; 
@@ -385,18 +409,26 @@ header nav li a:hover {
 
 #container #intro {
   width:100%; 
-  margin-bottom:60px; 
-  padding-bottom:20px; 
-  border-bottom:1px solid #D6D6D6;
+  margin-bottom: 60px; 
+  padding-bottom: 0px; 
+  /* border-bottom:1px solid #D6D6D6; */
 }
 #container #intro section {
   width:100%;
 }
-#container #intro section article {}
+#container #intro section article {
+  color: var(--c2);
+}
 #container #intro section article h2 {
+  font: 600 25px var(--f1);
+  font-style: normal;
   margin-bottom:15px;
 }
-#container #intro section article p {}
+#container #intro section article p {
+  opacity: 0.8;
+  font: 400 18px var(--f1);
+  margin: 0;
+}
 #container #intro section article figure ul {
   display:block; 
   width:100%; 
@@ -409,20 +441,27 @@ header nav li a:hover {
   float:left; 
   margin:0 25px 0 0;
 }
+#container #intro section article figure ul li a {
+  background-color: transparent !important;
+}
 #container #intro section article figure ul li.last {
   margin:0;
 }
 #container #intro section article figure ul li img {
   width:130px; 
-  height:130px; 
+  height:150px; 
   margin:0; 
   padding:4px; 
-  border:1px solid #D6D6D6;
+  /* border:1px solid #D6D6D6; */
+  transition: all .12s;
+}
+#container #intro section article figure ul li img:hover {
+  scale: 0.95;
 }
 #container #intro section article figure figcaption {
   display:block; 
   width:100%; 
-  margin-top:20px; 
+  margin-top: 35px; 
   clear:both; 
   text-align:center; 
   text-transform:uppercase; 
