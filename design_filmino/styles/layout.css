@@ -232,6 +232,7 @@ input, textarea, select {
 
 header {
   padding:20px 0;
+  padding-top: 10px;
   padding-bottom: 0;
 }
 
@@ -324,8 +325,7 @@ header nav li a {
   background-color:#232323;
 }
 header nav li a:hover {
-  color:#FF9900; 
-  background-color:#232323;
+  opacity: 0.8;
 } 
 
 /*----------------------------------------------Obsah-------------------------------------*/
