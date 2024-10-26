@@ -13,9 +13,17 @@ const pages = [
     name: "Fortnite",
     src: "design_fortnite"
   },
+  {
+    name: "React",
+    src: "design_react"
+  },
+  {
+    name: "Filmino",
+    src: "design_filmino"
+  },
 ]
 
-switchIframe(1); // Starting design
+switchIframe(4); // Starting design
 function switchIframe(index) {
   document.title = pages[index].name + " - design";
   setFavicon("images/" + pages[index].name + "_icon_logo.png");
