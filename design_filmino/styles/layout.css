@@ -365,8 +365,9 @@ header nav li a:hover {
   line-height:1.6em;
 }
 #container #slider figure figcaption footer {
-  width: fit-content;
+  width: 100%;
   margin-top: 30px !important;
+  text-align: start;
 }
 #container #slider figure figcaption a,
 .filmino-button {
@@ -387,6 +388,13 @@ header nav li a:hover {
   background-color: inherit !important;
   font-size: 15px;
   padding: 10px 20px;
+}
+.filmino-button-small {
+  color: inherit !important;
+  background-color: inherit !important;
+  font-size: 14px;
+  border-width: 2px;
+  padding: 8px 16px;
 }
 #container #slider figure h2 {
   color: var(--c1);
@@ -498,15 +506,13 @@ header nav li a:hover {
 /* ------Odkazy-----*/
 
 #container #homepage section nav li {
-  margin:0 0 8px 0; 
-  padding:0 0 5px 0; 
-  border-bottom:1px solid #D6D6D6;
+  margin-bottom: 30px;
 }
 #container #homepage section nav li.last {
   margin:0;
 }
 #container #homepage section nav a {
-  padding:0 0 0 10px; 
+  
 }
 
 /*----------------------------------------------Patička-------------------------------------*/
