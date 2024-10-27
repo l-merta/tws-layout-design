@@ -119,19 +119,15 @@ div.wrapper {
 }
 
 .row1, .row1 a {
-  color: whitesmoke; 
   background-color: var(--c2);
 }
 .row2 {
-  color:#979797; 
   background: rgb(27,40,56);
   background: linear-gradient(0deg, var(--c3) 60%, var(--c4) 100%);
 }
 .row2 a {
-  color: var(--c1); 
 }
 .row3, .row3 a {
-  color: #919191;
   background-color: var(--c2);
 }
 
@@ -356,6 +352,9 @@ header nav li a:hover {
   width:100%;
   box-shadow: 0 10px 20px var(--c4);
 }
+#container .slider-a {
+  color: var(--c1);
+}
 #container #slider figure {
 }
 #container #slider figure img {
@@ -373,10 +372,6 @@ header nav li a:hover {
   padding:20px; 
   overflow:hidden; 
   line-height:1.6em;
-}
-#container #slider figure figcaption a {
-  color:#FF9900; 
-  background-color:#464646;
 }
 #container #slider figure figcaption p {
   display: grid;
