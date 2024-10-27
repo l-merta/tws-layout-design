@@ -61,7 +61,6 @@ img {
 }
 .imgholder, .imgl, .imgr {
   padding:4px; 
-  border:1px solid #D6D6D6; 
   text-align:center;
 }
 .imgl {
@@ -270,7 +269,7 @@ header form input {
   margin:0; 
   padding:10px; 
   padding-left: 20px;
-  border: 2px solid var(--c3);
+  border: 2px solid rgb(65, 65, 65);
   border-radius: 20px;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
@@ -285,7 +284,7 @@ header form #sf_submit {
   font-weight:bold; 
   text-transform:uppercase; 
   color: var(--c1); 
-  background-color: var(--c3); 
+  background-color: rgb(65, 65, 65); 
   border:none; 
   border-radius: 20px;
   border-top-left-radius: 0;
@@ -387,6 +386,7 @@ header nav li a:hover {
   color: inherit !important;
   background-color: inherit !important;
   font-size: 15px;
+  padding: 10px 20px;
 }
 #container #slider figure h2 {
   color: var(--c1);
@@ -408,8 +408,6 @@ header nav li a:hover {
 #container #intro {
   width:100%; 
   margin-bottom:60px; 
-  padding-bottom:20px; 
-  border-bottom:1px solid #D6D6D6;
 }
 #container #intro section {
   width:100%;
@@ -473,10 +471,10 @@ header nav li a:hover {
   margin-bottom:0;
 }
 #container #homepage section h2.title {
-  margin:0 0 25px 0; 
+  margin-bottom: 15px;
   padding:0 0 8px 0; 
-  font-size:16px; 
-  font-weight:bold; 
+  font: 500 16px var(--f1);
+  font-style: normal;
   text-transform:uppercase;
 }
 #container #homepage section footer {
@@ -509,7 +507,6 @@ header nav li a:hover {
 }
 #container #homepage section nav a {
   padding:0 0 0 10px; 
-  background:url("../images/arrow.gif") left center no-repeat;
 }
 
 /*----------------------------------------------Patička-------------------------------------*/
