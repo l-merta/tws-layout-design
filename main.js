@@ -21,10 +21,10 @@ const pages = [
 
 switchIframe(1); // Starting design
 function switchIframe(index) {
+  console.log(index);
   document.title = pages[index].name + " - design";
   setFavicon("images/" + pages[index].name + "_icon_logo.png");
-  console.log("images/" + pages[index].name + "_icon_logo.png");
-  document.querySelector('iframe').src = pages[index].src;
+  document.querySelector('iframe').src = "https://mertalukas.cz/skola/design/" + pages[index].src;
   setActiveButton(navButtons[index-1]);
 }
 function setActiveButton(button) {
