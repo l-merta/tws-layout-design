@@ -19,13 +19,16 @@ const pages = [
   },
 ]
 
-switchIframe(1); // Starting design
+//switchIframe(1); // Starting design
 function switchIframe(index) {
-  console.log(index);
+  window.location.href = pages[index].src;
+  /*
   document.title = pages[index].name + " - design";
   setFavicon("images/" + pages[index].name + "_icon_logo.png");
-  document.querySelector('iframe').src = "https://mertalukas.cz/skola/design/" + pages[index].src;
+  const host = window.location.host; // Get the current host
+  document.querySelector('iframe').src = `https://${host}/skola/design/${pages[index].src}`; // Force HTTPS
   setActiveButton(navButtons[index-1]);
+  */
 }
 function setActiveButton(button) {
   navButtons.forEach(b => {
